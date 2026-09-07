@@ -9,8 +9,9 @@
 //! functions directly; the MCP server exposes them over JSON-RPC.
 //!
 //! The binary `nexus-cog-mcp-server` runs the MCP server over
-//! stdio (default) or streamable HTTP. The CLI binary
-//! `nexus-cog mcp` spawns that binary.
+//! stdio (default) or streamable HTTP (enable the `http` feature).
+//! The CLI binary `nexus-cog mcp` spawns that binary and passes the
+//! selected DB through `NEXUS_COG_DB`.
 
 pub mod tools;
 
